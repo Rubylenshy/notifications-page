@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+
+
+  <main>
+
+  <div class="container">
+    <header class="flex">
+      <div class="notification flex">
+        <h1>Notifications</h1>
+        <span id="n-number">4</span>
+      </div>
+      <p id="read">Mark all as read</p>
+    </header>
+
+    <div class="notifications-body">
+
+      <div class="item flex unread">
+        <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber">
+        <div class="content">
+          <div class="paragraph"><p><strong>Mark Webber</strong> reacted to your recent post <span>My first tournament today!</span></p> <img src="assets/images/check-all.svg" alt="read" title="Mark as read"></div>
+          <span class="time">1m ago</span>
+        </div>
+      </div>
+      <div class="item flex unread">
+        <img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray">
+        <div class="content">
+          <div class="paragraph"><p><strong>Angela Gray</strong> followed you</p> <img src="assets/images/check-all.svg" alt="read" title="Mark as read"></div>
+          <span class="time">5m ago</span>
+        </div>
+      </div>
+      <div class="item flex unread">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+        <div class="content">
+          <div class="paragraph"><p><strong>Jacob Thompson</strong> has joined your group <span>Chess Club</span></p> <img src="assets/images/check-all.svg" alt="read" title="Mark as read"></div>
+          <span class="time">1 day ago</span>
+        </div>
+      </div>
+      <div class="item flex unread">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+        <div class="content">
+          <div class="paragraph"><p><strong>Rizky Hasanuddin</strong> sent you a private message </p> <img src="assets/images/check-all.svg" alt="read" title="Mark as read"></div>
+          <span class="time">5 days ago</span>
+          <p class="message-text">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </p>
+        </div>
+      </div>
+      <div class="item flex">
+        <div class="content-box flex">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+          <div class="content">
+            <div class="paragraph"><p><strong>Kimberly Smith</strong> commented on your picture </p></div>
+            <span class="time">1 week ago</span>
+          </div>
+        </div>
+        <img src="assets/images/image-chess.webp" alt="A lady playing Chess">
+      </div>
+      <div class="item flex">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+        <div class="content">
+          <div class="paragraph"><p><strong>Nathan Peterson</strong> 
+            reacted to your recent post <span>5 end-game strategies to increase your win rate</span></p></div>
+          <span class="time">2 weeks ago</span>
+        </div>
+      </div>
+      <div class="item flex">
+        <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+        <div class="content">
+          <div class="paragraph"><p><strong>Anna Kim</strong> left the group <span>Chess Club</span></p></div>
+          <span class="time">2 weeks ago</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+  
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
