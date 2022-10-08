@@ -111,6 +111,9 @@ header p:hover{
     height: 20px;
     cursor: pointer;
 }
+img[alt='read']{
+    display: none;
+}
 
 .message-text{
     border: 1px solid var(--grayish-blue);

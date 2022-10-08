@@ -8,7 +8,7 @@ const mark = document.querySelectorAll("img[alt='read']")
 markAllasRead.addEventListener('click', ()=>{
     for (let i = 0; i < notificationItem.length; i++) {
         notificationItem[i].classList.remove('unread');
-        itemNumber.textContent = '0';
+        itemNumber.style.display = 'none';
     }
 })
 
@@ -16,8 +16,13 @@ for (let i = 0; i < mark.length; i++) {
     mark[i].addEventListener('click', ()=>{
         mark[i].style.display = 'none';
         notificationItem[i].classList.remove('unread');
-        
-        itemNumber.textContent = mark.length - 1;
+        // Deduction
+        number = itemNumber.textContent;
+        new_number = number - 1;
+        itemNumber.textContent = new_number;
+        if (itemNumber.textContent == 0) {
+            itemNumber.style.display = 'none';
+        }
     })
     
 }
