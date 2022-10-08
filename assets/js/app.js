@@ -13,7 +13,7 @@ markAllasRead.addEventListener('click', ()=>{
 })
 
 for (let i = 0; i < mark.length; i++) {
-    mark[i].addEventListener('click', ()=>{
+    notificationItem[i].addEventListener('click', ()=>{
         mark[i].style.display = 'none';
         notificationItem[i].classList.remove('unread');
         // Deduction
